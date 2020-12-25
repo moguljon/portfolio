@@ -1,0 +1,116 @@
+.header {
+    &__info-box {
+        font-size: 2rem;
+    }
+
+    &__brand {
+        color: var(--color-white);
+        font-size: 4rem;
+    }
+
+    &__logo-container {
+        border: 5px solid var(--color-white);
+        height: 100px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__heading4 {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+    &__paragraph {
+        font-size: 1.8rem;
+        margin-top: .4rem;
+    }
+
+    &__container {
+        padding: 4rem;
+    }
+
+    &__social {
+        display: flex;
+
+        &-icons {
+            margin-right: 1rem;
+
+          
+        }
+    }
+
+
+}
+.main {
+    position: relative;
+
+    &__container {
+        display: flex;
+        flex-direction: initial;
+    }
+
+    &__info-span {
+        display: block;
+        color: #3F3FBF
+    }
+
+    &__img-container {
+        background-image: url(../../img/resized2.jpeg);
+        background-size: cover;
+        background-position: center;
+        box-shadow: var(--box-shadow);
+        position: absolute;
+        top: 9rem;
+        right: 70rem;
+    }
+    &__img {
+        height: 50rem;
+    }
+
+    &__header-1 {
+        font-size: 2.8rem;
+        margin-bottom: 1.3rem;
+    }
+
+    &__paragraph {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    
+    &__info {
+        position: absolute;
+        right: 10rem;
+        top: 20rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__info-container {
+        width: 50rem;
+    }
+
+    &__paragraph2 {
+        width: 80%;
+        margin-top: 2rem;
+        font-size: 1.3rem;
+        color: var(--color-dark);
+    }
+
+    &__btn-container {
+        font-size: 1.3rem;
+    }
+}
+
+.brand2 {
+    display: block;
+}
+
+.icons {
+    margin-top: .4rem;
+    cursor: pointer;
+    &:hover {
+        color: orange;
+    }
+}

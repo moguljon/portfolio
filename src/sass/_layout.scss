@@ -1,0 +1,31 @@
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    min-height: 50rem;
+}
+
+.header {
+
+    &__nav {
+        background-color: var(--color-grey);
+        display: flex;
+        justify-content: space-between;  
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        background: var(--color-main);
+        flex: 0 0 30%;
+        color: var(--color-white);
+    }
+
+    &__main {
+        flex: 1;
+    }
+}
+
+.main {
+}
