@@ -1,12 +1,15 @@
 import './sass/main.scss';
 import Homepage from './Homepage/Homepage';
-import Navigation from './components/Navigation/Navigation';
+import Resume from './components/Resume/Resume';
+import {BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      
-      <Homepage />
+      <Router>
+        <Route exact path='/' component={Homepage} />
+        <Route exact path='/resume' component={Resume} />
+      </Router>
     </div>
   );
 }

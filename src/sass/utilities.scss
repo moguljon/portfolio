@@ -1,0 +1,12 @@
+.secondary {
+    font-size: 3rem;
+
+    &::after {
+        content: '';
+        width: 100px;
+        height: 3px;
+        background-color: var(--color-main);
+        display: block;
+    }
+}
+

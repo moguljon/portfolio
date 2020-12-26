@@ -1,0 +1,105 @@
+@import '../../sass/main.scss';
+
+.resume {
+    width: 100%;
+    padding: 5rem 8rem;
+
+    &__content {
+        margin: 3rem 0 8rem 0;
+        letter-spacing: .3px;
+        box-shadow: var(--box-shadow2);
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 2.4rem;
+        margin-bottom: 1rem;
+    }
+
+    &__paragraph {
+        font-size: 2.1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__paragraph2 {
+        font-size: 1.3rem;
+        margin-top: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // LAYOUT AND MIXINS
+
+// .row {
+//     max-width: $grid-width;
+//     margin: $center;
+  
+//     &:not(:last-child) {
+//       margin-bottom: $gutter-vertical;
+//     }
+//   }
+  
+
+// //   @include clearfix();
+  
+//   [class^='col-'] {
+//     float: left;
+  
+//     &:not(:last-child) {
+//       margin-right: $horizontal-gutter;
+//     }
+//   }
+  
+  
+//   .col-1-of-3 {
+//     width: calc((100% - 2 * #{$horizontal-gutter}) / 3);
+//   }
+  
+//   .col-1-of-2 {
+//     width: calc((100% - 2 * #{$horizontal-gutter}) / 2);
+//   }
+  
+//   .col-1-of-4 {
+//     width: calc((100% - 3 * #{$horizontal-gutter}) / 4);
+//   }
+  
+//   .col-1-of-4-grid {
+//     width: calc((100% - 3 * #{$horizontal-gutter-grid}) / 4);
+//   }
+  
+
+  @mixin clearfix {
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  }
+  

@@ -1,3 +1,14 @@
+
+@import '../sass/mixins';
+//GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$horizontal-gutter: 6rem;
+$horizontal-gutter-grid: 6rem;
+
+//CENTER
+$center: 0 auto;
+
 .container {
     max-width: 120rem;
     margin: 0 auto;
@@ -16,10 +27,14 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 100vh;
+        min-height: 100vh;
         background: var(--color-main);
         flex: 0 0 30%;
         color: var(--color-white);
+
+        &--2 {
+            height: 100rem;
+        }
     }
 
     &__main {
@@ -27,5 +42,44 @@
     }
 }
 
-.main {
+
+
+// LAYOUT
+
+.row {
+  max-width: $grid-width;
+  margin: $center;
+
+  &:not(:last-child) {
+    margin-bottom: $gutter-vertical;
+  }
 }
+
+
+//   @include clearfix();
+
+[class^='col-'] {
+  float: left;
+
+  &:not(:last-child) {
+    margin-right: $horizontal-gutter;
+  }
+}
+
+
+.col-1-of-3 {
+  width: calc((100% - 2 * #{$horizontal-gutter}) / 3);
+}
+
+.col-1-of-2 {
+  width: calc((100% - 2 * #{$horizontal-gutter}) / 2);
+}
+
+.col-1-of-4 {
+  width: calc((100% - 3 * #{$horizontal-gutter}) / 4);
+}
+
+.col-1-of-4-grid {
+  width: calc((100% - 3 * #{$horizontal-gutter-grid}) / 4);
+}
+
